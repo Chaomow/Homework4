@@ -1,0 +1,87 @@
+.loginPage {
+  display: flex;
+  justify-content: center;
+}
+
+.tabs {
+  :global {
+    .ant-tabs-bar {
+      margin-bottom: 20px;
+    }
+    .ant-tabs-nav {
+      display: flex;
+      > div {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+      }
+      .ant-tabs-tab {
+        font-size: 16px;
+        color: #808284;
+        &.ant-tabs-tab-active {
+          color: #6f6e6e;
+          text-shadow: 0 1px 1px #cacaca;
+          font-weight: bold;
+        }
+      }
+      .ant-tabs-ink-bar {
+        background: #6f6e6e;
+      }
+    }
+  }
+}
+
+.form {
+  :global {
+    width: 550px;
+    font-size: 16px;
+    padding: 20px 30px;
+    background-color: #faffff59;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 5px #e9e1e1;
+    transform: translateY(10px);
+
+    .ant-input {
+      font-size: 16px;
+      background: transparent !important;
+      padding: 20px;
+    }
+
+    .ant-input-group-addon {
+      background: transparent !important;
+    }
+
+    .ant-input-prefix {
+      left: 10px;
+      .anticon {
+        font-size: 16px;
+      }
+    }
+
+    .has-error {
+      .ant-form-explain,
+      .ant-form-split {
+        margin-top: 3px;
+      }
+    }
+  }
+}
+
+.title {
+  text-align: center;
+  color: #787777;
+}
+
+.logo {
+  font-size: 56px;
+}
+
+.siteLabel {
+  text-transform: uppercase;
+  vertical-align: text-bottom;
+  letter-spacing: 2px;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0 30px;
+}
